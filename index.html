@@ -11,12 +11,9 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
 
-    
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
 <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
 
     <style>
       .bd-placeholder-img {
@@ -167,28 +164,20 @@
   </header>
 
   <main class="px-3">
-    <h1>Venta de churros.</laberl>
-   <form action="vender.php" method="post">
-    <input type="number" name="txt_cantidad" min="1" required>
-    <input type="number" name="txt_cantidad" required>
-    <br>
-    <label>selecciona el tipo</label>
-    <br>
-  <select name="tipos de churros" class="form-control" required>
-  <option value="">selecciona tu sabor</option>
-  <option value="1">arequipe</option>
-  <option value="2">bocadillo</option>
-  <option value="3">queso</option>
-  </select>
-  <br>
-    <input type="submit" class="form-control">
-  </form>
-  
+    <h1>VENDER</h1>
+    <form action="procesar_ventas.php" method="post">
+    <input type="number" name="txt_cantidad" class="form-control" cuantos quiere" required>
+    <input type="submit" value="vender" class="form-control" required>
+    
+</form>
+    
+  </main>
+
   <footer class="mt-auto text-white-50">
     <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
   </footer>
 </div>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>
