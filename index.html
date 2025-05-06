@@ -11,6 +11,8 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
 
+    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
 <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -164,20 +166,21 @@
   </header>
 
   <main class="px-3">
-    <h1>VENDER</h1>
-    <form action="procesar_ventas.php" method="post">
-    <input type="number" name="txt_cantidad" class="form-control" cuantos quiere" required>
-    <input type="submit" value="vender" class="form-control" required>
+    <h1>Ventas de Huevos</h1>
+    <form action="procesar.php" method="post">
+      <input type="number" name="cantidad"  class="form-control"  placeholder="Escribe cuantos huevos quieres" required>
+      <br>
+      <select name="tipo" class="form-control" required>
+      <option value="" > seleccione su huevo </option>
+      <option value="1" >A</option>
+      <option value="2" >AA</option>
+      <option value="3" >AAA</option> 
+      </select>
+      <br>
+      <input type="submit" class="form-control" name="vender">
+    </form>
     
-</form>
-    
+  
   </main>
-
-  <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-  </footer>
-</div>
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-
     </body>
 </html>
